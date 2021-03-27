@@ -20,6 +20,7 @@ import {
   FaCcStripe,
   FaCcPaypal,
 } from "react-icons/fa";
+import { API_URL } from "./config";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";
@@ -41,7 +42,7 @@ export default function addlike() {
     const likeserwer = async (e) => {
       e.preventDefault();
       location.reload();
-      await fetch("http://34.90.159.141:23827/addlike", {
+      await fetch(`${API_URL}/addlike`, {
         method: "post",
         headers: {
           "Content-Type": "application/json",
@@ -69,11 +70,9 @@ export default function addlike() {
       );
     }
     const { data: serverdata } = useSWR(
-      `http://34.90.159.141:23827/theserver?server=${router.query.server}`
+      `${API_URL}/theserver?server=${router.query.server}`
     );
-    const { data: clientlikes } = useSWR(
-      `http://34.90.159.141:23827/clientlikes`
-    );
+    const { data: clientlikes } = useSWR(`${API_URL}/clientlikes`);
     serverdata?.filter(function (item) {
       if (item.name == router.query.server) {
         domain = item.domain;

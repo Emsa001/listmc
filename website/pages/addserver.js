@@ -2,13 +2,14 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Mnav from "../components/navbar";
 import { useState } from "react";
+import { API_URL } from "./config";
 import useSWR from "swr";
 import "bootstrap/dist/css/bootstrap.min.css";
 //components
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 export default function AddServer() {
-  const { mutate } = useSWR(`http://34.90.159.141:23827/serverlist`);
+  const { mutate } = useSWR(`${API_URL}/serverlist`);
   const [serverName, setServerName] = useState(" ");
 
   const onAddServer = async (e) => {
@@ -17,7 +18,7 @@ export default function AddServer() {
     if (serverName.length > 3) {
       window.location.replace(`server?server=${serverName.toLowerCase()}`);
     }
-    await fetch("http://34.90.159.141:23827/serverlist", {
+    await fetch(`${API_URL}/serverlist`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",

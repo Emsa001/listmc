@@ -8,9 +8,10 @@ import Mnav from "../components/navbar";
 import { FaSignal, FaGem } from "react-icons/fa";
 import { OverlayTrigger, Tooltip, Pagination } from "react-bootstrap";
 import { useState } from "react";
+import { API_URL } from "./config";
 
 function ServerMC({ id, name, domain, likes, premium }) {
-  const { data } = useSWR(`https://api.mcsrvstat.us/2/${name}`);
+  const { data } = useSWR(`${API_URL}/${name}`);
   var ispremium = "";
   if (premium == 1) {
     ispremium = "serverpremium";
@@ -101,7 +102,7 @@ function ServerMC({ id, name, domain, likes, premium }) {
 
 export default function Home() {
   const [page, setPage] = useState(0);
-  const { data } = useSWR(`http://34.90.159.141:23827/serverlist?page=${page}`);
+  const { data } = useSWR(`${API_URL}/serverlist?page=${page}`);
   return (
     <div className={styles.content}>
       <Head>
