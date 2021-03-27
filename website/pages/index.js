@@ -11,7 +11,7 @@ import { useState } from "react";
 import { API_URL } from "../config";
 
 function ServerMC({ id, name, domain, likes, premium }) {
-  const { data } = useSWR(`${API_URL}/${name}`);
+  const { data } = useSWR(`https://api.mcsrvstat.us/2/${name}`);
   var ispremium = "";
   if (premium == 1) {
     ispremium = "serverpremium";
