@@ -1,0 +1,387 @@
+/*NAVBAR*/
+
+.navbar {
+  padding-top: 50px;
+}
+
+.nav {
+  width: 90vw;
+  margin: auto;
+  border-radius: 15px;
+  border: 0px;
+  box-shadow: 5px 10px 10px 5px rgb(177, 177, 177);
+}
+.navbtn {
+  border-radius: 10px !important;
+}
+.navinp {
+  margin-right: 25px;
+  border-radius: 10px !important;
+}
+
+.navlink {
+  margin-right: 10px;
+}
+.navlink a {
+  color: #474747;
+  transition-duration: 0.1s;
+}
+.navlink a:hover {
+  color: #000000;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav a {
+  text-decoration: none;
+}
+
+/*CONTAINER*/
+
+.container {
+  margin: auto;
+  margin-top: 20px;
+  width: 80% !important;
+}
+
+/*SERVER*/
+
+.servercontainer {
+  cursor: pointer;
+  transition: 0.1s;
+  box-shadow: 1px 5px 10px 1px rgb(163, 163, 163);
+  border-radius: 15px;
+}
+
+.servercontainer:hover {
+  box-shadow: 2px 10px 20px 2px rgb(163, 163, 163);
+}
+.servericon img {
+  border-radius: 15px;
+  max-width: 64px;
+}
+
+.avatar {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.srvertags {
+  text-align: center;
+}
+
+.srvertags span {
+  color: #fff;
+  border-radius: 10px;
+  background-color: #0275d8;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  padding: 1px 4px 4px 1px;
+  min-width: 100px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1200px) {
+  .serverfooter {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .servercontainer {
+    padding: 30px;
+  }
+
+  .servericon {
+    margin: auto;
+    max-width: 64px;
+  }
+
+  .servername {
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 10px;
+  }
+
+  .servername span {
+    font-size: 1rem;
+  }
+
+  .serverdes,
+  .lookupservermotd {
+    text-align: center;
+    background-color: rgb(44, 39, 39);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px 10px;
+    min-height: 100px;
+  }
+
+  .serverstat {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .rightwidget {
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .openservercon {
+    margin: auto;
+    width: 70% !important;
+    background-color: #f0f0f0;
+    padding: 30px 30px 5px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 10px 1px rgb(163, 163, 163);
+    min-height: 150px;
+    transition: 0.2s;
+    margin-bottom: 10px;
+  }
+  .serverlookouticon,
+  .servertitle {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .serverlookouticon img {
+    border-radius: 15px;
+    max-width: 64px;
+  }
+  .servrightwidget {
+    margin: auto;
+    width: 70% !important;
+    background-color: #f0f0f0;
+    margin-top: 30px;
+    padding: 30px 30px 5px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 10px 1px rgb(163, 163, 163);
+    min-height: 150px;
+    transition: 0.2s;
+  }
+  .buypremium {
+    margin: auto;
+    margin-top: 100px;
+    width: 70% !important;
+    background-color: #f0f0f0;
+    padding: 30px 30px 5px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 10px 1px rgb(163, 163, 163);
+    text-align: center;
+  }
+  .paymentbtn {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .rightwidget {
+    display: block;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .serverpremium {
+    margin: auto;
+    margin-top: 100px;
+    width: 70% !important;
+    background-color: #f8f8f8;
+    padding: 30px 30px 5px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 10px 1px rgb(163, 163, 163);
+    text-align: center;
+  }
+
+  .serverfooter {
+    position: absolute;
+    padding-top: 90px !important;
+  }
+
+  .servercontainer {
+    background-color: #f0f0f0 !important;
+    padding: 20px;
+    display: flex;
+    max-width: 1200px;
+  }
+  .servericon {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding-top: 20px;
+  }
+  .servername {
+    padding-top: 18px;
+    margin-left: 10px;
+    display: inline-block;
+  }
+  .serverdes,
+  .lookupservermotd {
+    margin-left: 50px;
+    width: 800px;
+    text-align: center;
+    background-color: rgb(44, 39, 39);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px 10px;
+    min-height: 100px;
+  }
+  .serverstat {
+    text-align: right;
+    min-width: 150px;
+    padding: 30px 0px;
+  }
+  .serverstat span {
+    color: rgb(47, 49, 223);
+  }
+
+  .serverlookupdiv {
+    display: flex;
+  }
+
+  .openservercon {
+    margin-left: 10vw;
+    margin-right: 5vw;
+    width: 600px !important;
+    background-color: #f0f0f0;
+    padding: 30px 30px 5px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 10px 1px rgb(163, 163, 163);
+    min-height: 150px;
+    transition: 0.2s;
+    margin-bottom: 10px;
+  }
+
+  .lookupservermotd {
+    margin-left: 0;
+    width: auto;
+  }
+
+  .serverlookouticon,
+  .servertitle {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    display: inline;
+  }
+  .serverlookouticon img {
+    border-radius: 15px;
+    max-width: 64px;
+  }
+  .servrightwidget {
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    padding: 30px 30px 5px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 10px 1px rgb(163, 163, 163);
+    min-height: 150px;
+  }
+  .buypremium {
+    margin: auto;
+    margin-top: 100px;
+    width: 70% !important;
+    background-color: #f0f0f0;
+    padding: 30px 30px 5px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 10px 1px rgb(163, 163, 163);
+    text-align: center;
+  }
+  .paymentbtn {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .servrightwidget {
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 1px 5px 10px 1px rgb(163, 163, 163);
+    min-height: 150px;
+    max-width: 330px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .openservercon {
+    width: 700px !important;
+  }
+  .servrightwidget {
+    max-width: 330px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .openservercon {
+    margin-left: 8vw;
+    width: 48.5vw !important;
+    margin-right: 1vw;
+  }
+  .rightwidget {
+    display: flex;
+  }
+  .servrightwidget {
+    margin-left: 10px;
+    max-width: 330px;
+  }
+}
+
+.serverlookupdiv {
+  margin-top: 50px;
+}
+/*FOOTER*/
+
+.footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+.footer img {
+  margin-left: 0.5rem;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 3em;
+  border-radius: 25px;
+}
+
+.vip {
+  box-shadow: 10px 10px 20px 10px rgb(163, 163, 163);
+  border: 3px solid #fff;
+}
+.vip:hover {
+  box-shadow: 10px 10px 20px 10px rgb(136, 136, 136);
+}
+
+.serverfooter {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+
+.statspremium span {
+  color: rgb(253, 125, 40) !important;
+  font-weight: bolder;
+}
+
+.pagelist {
+  margin-top: 50px !important;
+  width: 100px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.playerslookup {
+  margin-left: 10px;
+}

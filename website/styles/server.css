@@ -1,0 +1,12 @@
+.servercontainer {
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 10px 5px rgb(177, 177, 177);
+  min-height: 150px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.addform {
+  text-align: center;
+}
