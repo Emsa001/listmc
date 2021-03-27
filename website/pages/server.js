@@ -20,7 +20,7 @@ import {
   FaCcStripe,
   FaCcPaypal,
 } from "react-icons/fa";
-import { API_URL } from "./config";
+import { API_URL } from "../config";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";

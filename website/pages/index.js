@@ -8,7 +8,7 @@ import Mnav from "../components/navbar";
 import { FaSignal, FaGem } from "react-icons/fa";
 import { OverlayTrigger, Tooltip, Pagination } from "react-bootstrap";
 import { useState } from "react";
-import { API_URL } from "./config";
+import { API_URL } from "../config";
 
 function ServerMC({ id, name, domain, likes, premium }) {
   const { data } = useSWR(`${API_URL}/${name}`);

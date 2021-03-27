@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Mnav from "../components/navbar";
 import { useState } from "react";
-import { API_URL } from "./config";
+import { API_URL } from "../config";
 import useSWR from "swr";
 import "bootstrap/dist/css/bootstrap.min.css";
 //components
