@@ -4,10 +4,10 @@ const { Sequelize, Model, DataTypes } = require("sequelize");
 
 const sequelize = new Sequelize({
   dialect: "mysql",
-  host: "evelinka99.atthost24.pl",
-  username: "5795_run",
-  password: "Pj737@p#o2f!e",
-  database: "5795_run",
+  host: "host",
+  username: "username",
+  password: "pass",
+  database: "db"
 });
 
 // MODELS
